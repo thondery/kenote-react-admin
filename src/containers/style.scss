@@ -1,0 +1,65 @@
+// ------------------------------------
+// Sass Style
+// ------------------------------------
+.layout-root {
+  height: inherit;
+  display: flex;
+}
+
+.layout-initial-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #eaedf1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.progress-span {
+  font-size: 10px;
+  color: #999;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.progress-span-initial {
+  font-size: 10px;
+  color: #999;
+  line-height: 1.8;
+  margin-bottom: 8px;
+
+  &::after {
+    content: '15%';
+    animation: initial-progress-span 2s;
+  }
+}
+
+@keyframes hideMask {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes initial-progress-span {
+  0% {
+    content: '0%' ;
+  }
+  30% {
+    content: '5%' ;
+  }
+  80% {
+    content: '15%' ;
+  }
+  100% {
+    content: '15%' ;
+  }
+}

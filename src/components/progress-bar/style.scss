@@ -1,0 +1,51 @@
+// ------------------------------------
+// Sass Style
+// ------------------------------------
+.layout-progress-bar {
+  width: 40%;
+  max-width: 500px;
+  background-color: #fff;
+  border: 1px #eee solid;
+  border-radius: 6px;
+  height: 8px;
+  overflow: hidden;
+
+  .progress-bar-container {
+    background-color: #fff;
+    height: 4px;
+    margin: 1px;
+    border-radius: inherit;
+    overflow: hidden;
+  }
+
+  .progress-bar-pending {
+    background-color: #33cdff;
+    width: 15%;
+    height: inherit;
+    border-radius: 3px;
+    transition: width .8s ;
+  }
+
+  .progress-bar-pending-initial {
+    background-color: #33cdff;
+    width: 15%;
+    height: inherit;
+    border-radius: 3px;
+    animation: initial-progress-bar 2s;
+  }
+}
+
+@keyframes initial-progress-bar {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 5%;
+  }
+  80% {
+    width: 15%;
+  }
+  100% {
+    width: 15%;
+  }
+}

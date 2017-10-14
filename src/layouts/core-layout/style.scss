@@ -1,0 +1,60 @@
+// ------------------------------------
+// Sass Style
+// ------------------------------------
+.layout-warpper {
+  height: inherit;
+  display: flex;
+  width: 100%;
+}
+
+.layout-page-container {
+  height: inherit;
+  width: 100%;
+  overflow-y: auto;
+  position: relative;
+
+  >div {
+    padding: 20px;
+  }
+
+  .ant-breadcrumb {
+    font-size: 15px;
+    border-left-width: 2px;
+    border-left-color: #49a9ee;
+    border-left-style: solid;
+    line-height: 15px;
+    padding-left: 10px;
+    position: relative;
+    margin-bottom: 40px;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 100%;
+      background: rgba(0,0,0,.2);
+      position: absolute;
+      top: 32px;
+      left: -2px;
+    }
+
+    a {
+      font-weight: normal;
+    }
+  }
+
+  .layout-page-tools {
+    margin: 10px 0 20px 0;
+  }
+
+  .layout-page-loading {
+    height: 3px;
+    background: #49a9ee;
+    position: absolute;
+    top: 0;
+    //width: 10%;
+    //overflow: hidden;
+    padding: 0;
+    transition: all 1.2s ;
+  }
+}

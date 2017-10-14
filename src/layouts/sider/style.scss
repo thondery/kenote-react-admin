@@ -1,0 +1,25 @@
+// ------------------------------------
+// Sass Style
+// ------------------------------------
+.layout-sider {
+  //width: 200px;
+  flex: 0 0 260px;
+  background-color: #333;
+  overflow-y: auto;
+  transition: all .3s ;
+  
+  .menu-collapsed {
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgba(255, 255, 255, 0.67);
+    background: #333;
+    transition: all .3s ;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+// ------------------------------------
+// Sass Style
+// ------------------------------------
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+  font-family: Menlo, "Ubuntu Mono", Consolas, "Courier New", "Microsoft Yahei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+#root {
+  height: inherit;
+}
+
+h1 {
+  margin: 20px 0;
+
+  &:first-child {
+    margin-top: 0px;
+  }
+}

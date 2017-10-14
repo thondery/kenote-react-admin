@@ -1,0 +1,99 @@
+// ------------------------------------
+// Sass Style
+// ------------------------------------
+.app-layout-body {
+  display: flex;
+  padding: 20px;
+  flex: 1;
+  flex-direction: column;
+  background-color: #eaedf1;
+  overflow-y: auto;
+
+  .ant-breadcrumb {
+    font-size: 15px;
+    border-left-width: 2px;
+    border-left-color: #49a9ee;
+    border-left-style: solid;
+    line-height: 15px;
+    padding-left: 10px;
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 30px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 100%;
+      background: rgba(0,0,0,.2);
+      position: absolute;
+      top: 42px;
+      left: -2px;
+    }
+  }
+
+  .app-layout-wrap {
+    flex-flow: wrap;
+
+    a {
+      .app-layout-wrap-item {
+        width: 240px;
+        height: 150px;
+        background: #fff;
+        margin: 10px;
+        //border: 1px solid #ccc;
+        justify-content: center;
+        align-items: center;
+        transition: all .8s;
+
+        h2 {
+          color: #999;
+          text-decoration: 'none'
+        }
+      }
+
+      &:hover {
+
+        .app-layout-wrap-item {
+          background: #40badc;
+
+          h2 {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .ant-table-tbody {
+    background: #fff;
+    font-family: "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";
+    font-size: 13px;
+  }
+  
+  .ant-form-item-label label {
+    font-family: "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";
+    font-size: 14px;
+    padding-right: 20px;
+  }
+    
+}
+
+.has-success.has-feedback:after {
+  content: ''
+}
+
+form .has-feedback .ant-select-arrow {
+  right: 10px;
+}
+
+.app-modal-form {
+  
+  .ant-checkbox-group-item {
+    width: 160px;
+  }
+}

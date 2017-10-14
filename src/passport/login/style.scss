@@ -1,0 +1,41 @@
+// ------------------------------------
+// Sass Style
+// ------------------------------------
+.passport-wraper {
+  display: flex;
+  flex: 1;
+  height: inherit;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: center;
+  background: #353535;
+  padding-top: 100px;
+
+  h1 {
+    margin-bottom: 50px;
+    color: #c9c9c9;
+    font-size: 24px;
+  }
+
+  .form-container {
+    width: 240px;
+
+    .form-button {
+      width: 100%;
+      margin: 0;
+    }
+
+    .has-error .ant-form-explain, .has-error .ant-form-split {
+      color: #e64626;
+      line-height: 2;
+    }
+
+    .has-error .ant-input-prefix {
+      color: #e64626;
+    }
+
+    .has-error .ant-input, .has-error .ant-input:hover {
+      border-color: #e64626;
+    }
+  }
+}
