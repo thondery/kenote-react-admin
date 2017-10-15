@@ -10,7 +10,6 @@ import { connect } from 'react-redux'
 @connect(
   state => ({
     auth:     state.Passport.auth,
-    ...state.Home
   }),
 )
 export default class Home extends PureComponent {
