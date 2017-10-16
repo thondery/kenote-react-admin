@@ -65,6 +65,15 @@ module.exports = {
     filename: '[name].bundle.js',
     publicPath: ''
   },
+  resolve: {
+    alias: {
+      components  : path.resolve(__dirname, 'src/components/'),
+      layouts     : path.resolve(__dirname, 'src/layouts/'),
+      passport    : path.resolve(__dirname, 'src/passport/'),
+      reduxs      : path.resolve(__dirname, 'src/redux/'),
+      services    : path.resolve(__dirname, 'src/services/'),
+    }
+  },
   plugins: _.compact([
     new webpack.DllReferencePlugin({
       context: __dirname,

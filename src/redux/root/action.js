@@ -3,7 +3,7 @@
 // ------------------------------------
 import { createAction } from 'http-services'
 import * as types from './constant'
-import { HttpServices, REDUX_FETCH_TIMEOUT } from '../../services/utils'
+import { HttpServices, REDUX_FETCH_TIMEOUT } from 'services/utils'
 
 export function initialComplete (tag = null) {
   return dispatch => {

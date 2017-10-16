@@ -5,7 +5,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import './style.scss'
 import { Header, Sider } from '../'
-import { Permission } from '../../components'
+import { Permission } from 'components'
 
 export default class CoreLayout extends PureComponent {
   

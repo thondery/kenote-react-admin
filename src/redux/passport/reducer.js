@@ -3,8 +3,8 @@
 // ------------------------------------
 import { createReducer, statusToError, getStatusError } from 'http-services'
 import * as types from './constant'
-import * as storageService from '../../services/storage'
-import { getToken, setToken } from '../../services/token'
+import * as storageService from 'services/storage'
+import { getToken, setToken } from 'services/token'
 
 const initState = {
   loginPending: false,
@@ -131,6 +131,6 @@ function updateAuth (payload) {
   if (status.code === 0) {
     const { auth } = data
     storageService.setItem('auth', auth)
-    setToken(auth.tokenkey)
+    setToken(auth.accesskey)
   }
 }

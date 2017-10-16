@@ -4,7 +4,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import './style.scss'
-import { CoreLayout } from '../../layouts'
+import { CoreLayout } from 'layouts'
 import { connect } from 'react-redux'
 
 @connect(

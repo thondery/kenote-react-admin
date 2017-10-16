@@ -3,9 +3,9 @@
 // ------------------------------------
 import { createAction } from 'http-services'
 import * as types from './constant'
-import { HttpServices, REDUX_FETCH_TIMEOUT } from '../../services/utils'
-import * as storageService from '../../services/storage'
-import { getToken } from '../../services/token'
+import { HttpServices, REDUX_FETCH_TIMEOUT } from 'services/utils'
+import * as storageService from 'services/storage'
+import { getToken } from 'services/token'
 
 export function initial () {
   return dispatch => {

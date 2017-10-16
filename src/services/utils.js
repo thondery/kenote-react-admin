@@ -4,6 +4,7 @@
 import { httpServices } from 'http-services'
 import config from '../config'
 import _ from 'lodash'
+export { default as flagData } from '../data/flag.json'
 
 const { domain, apiPath } = config
 export const REDUX_FETCH_TIMEOUT = 500
@@ -25,3 +26,18 @@ export const getRoutes = (Features) => {
   }
   return Routes
 }
+
+export const getMenuSub = (routes, opts) => {
+  let menuSub = {
+    ...opts,
+    data:  []
+  }
+  for (let e of routes.childRoutes) {
+    !e.isIndex && menuSub.data.push({
+      key: e.path,
+      name: e.name,
+      path: opts.key
+    })
+  }
+  return menuSub
+} 

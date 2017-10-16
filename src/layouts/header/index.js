@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 import history from '../../store/history'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { passportActions as Actions } from '../../redux'
+import { passportActions as Actions } from 'reduxs'
 import { menus } from './modules'
 
 @connect (

@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { rootActions, passportActions } from '../redux'
-import { ProgressBar } from '../components'
-import { Login } from '../passport'
+import { rootActions, passportActions } from 'reduxs'
+import { ProgressBar } from 'components'
+import { Login } from 'passport'
 import './style.scss'
 
 @connect(

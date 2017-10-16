@@ -1,4 +1,6 @@
 export { actions as rootActions } from './root'
 export { actions as passportActions } from './passport'
+export { actions as adminGroupActions } from './admin-group'
 export { Reducer as rootReducer } from './root'
 export { Reducer as passportReducer } from './passport'
+export { Reducer as adminGroupReducer } from './admin-group'

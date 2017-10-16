@@ -8,6 +8,8 @@ import { Link } from 'react-router-dom'
 import { Routes } from '../../features'
 import { Menu, Icon, Button } from 'antd'
 const SubMenu = Menu.SubMenu
+import * as menuSubs from '../../features/menuSub'
+import _ from 'lodash'
 
 export default class Sider extends PureComponent {
   
@@ -44,7 +46,10 @@ export default class Sider extends PureComponent {
           defaultOpenKeys={[pathMatch && pathMatch[2]]}
           selectedKeys={[pathname.toLowerCase()]}
           >
-          
+          {_.keys(menuSubs).map( (item, i) => {
+            let { key, name, icon, data } = menuSubs[item]
+            return this.renderSubMenu(key, name, icon, data)
+          })}
         </Menu>
       </div>
     )

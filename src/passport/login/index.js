@@ -7,7 +7,7 @@ import './style.scss'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { message } from 'antd'
-import { passportActions } from '../../redux'
+import { passportActions } from 'reduxs'
 import { WrappedLoginForm } from './modules'
 
 @connect (
